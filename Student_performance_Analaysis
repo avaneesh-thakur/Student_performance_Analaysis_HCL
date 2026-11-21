@@ -1,0 +1,9 @@
+import pandas as pd
+
+print("following are the files: Cleaned_Student_Data.xlsx, Raw_Student_Data.xlsx")
+
+excel_file=input("enter the excelfile:")
+df= pd.read_excel(excel_file)
+n=int(input("enter the no of rows"))
+print("here are the first",n,"rows")
+print(df.head(n))
